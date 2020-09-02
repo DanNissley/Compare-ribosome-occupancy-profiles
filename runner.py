@@ -75,7 +75,7 @@ else:
 	#compare.alignDomains(yeast_S288C_domains, yeast_S288C_domains, pairs, outdir)
 
 	# select pairs of domains with acceptable DNA sequence identity
-	goodPairs = compare.findAcceptableDomainPairs(pairs, outdir, min=0.30, max=1.00, verbose=False)
+	goodPairs = compare.findAcceptableDomainPairs(pairs, outdir, min=0.30, max=0.80, verbose=False)
 
 	# align translation rate profiles based on AA alignments, throwing out pairs with unacceptable gaps
 	alignedDomains = compare.getAlignedReadProfiles(goodPairs, yeast_S288C_domains, outdir, maxGapSize=5, maxNumGaps=10,  verbose=False)
