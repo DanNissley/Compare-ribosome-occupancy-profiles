@@ -45,7 +45,7 @@ Each chunk of 20 lines in these files is a comparison between one pair of relate
 
 runner.py will also parse the output in each of these pairwise comparison files to generate a summary file, e.g. pooled_k0_30-80.bck/1_slowMidFast.txt. These files give the number of pairs of related domains placed in ranks 1 through 20 (see manuscript Methods). 
 
-Finally, a summary file can be generated that gives the average number of domain pairs in each rank over the 20 trials (e.g. pooled_k0_30-80.bck/slowMidFast_summary.txt). These data are plotting in Figure 2b.
+Finally, a summary file can be generated that gives the average number of domain pairs in each rank over the 20 trials (e.g. pooled_k0_30-80.bck/slowMidFast_summary.txt). These data are plotting in Figure 2b. Note well: your results will not quantitatively match those in the manuscript due to the random nature of unrelated domain selection; however, you should get highly similar results that lead you to the same qualitative conclusions.
 
 ## Other information
 
