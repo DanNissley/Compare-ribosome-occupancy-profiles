@@ -31,6 +31,10 @@ Use the first command in commands.txt to run align.py. This will generate the di
 
 Note that, by default, align.py will attempt to use the python multiprocessing module to speed up running the alignments. If you do not want to do so, add the "multi=False" argument to the end of the list of arguments at the last line of align.py
 
+A MUSCLE executable for alignments is provided in src/, but you may need to download the source code (https://www.drive5.com/muscle/downloads.htm) and recompile. In any case, you will likely need to run the command "chmod +x src/muscle3.8.31_i86linux64" to make it executable again after download. 
+
+After this step you should have fasta format files (.fa extension) and alignments (.afa extension) in example/aa_alignments/ and example/dna_alignments/ for each pair of related domains.
+
 ## Compare ribosome occupancy profiles
 
 Use one or all of the other 20 commands in commands.txt to call runner.py and run comparisons between ribosome occupancy profiles for related domains. For the pooled data set this can be time consuming (~12 hours) due to the large number of random domains that must be selected and processed. 
