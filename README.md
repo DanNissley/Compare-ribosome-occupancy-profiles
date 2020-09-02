@@ -29,6 +29,8 @@ Open align.py and runner.py and change the line reading "sys.path.append('/data/
 
 Use the first command in commands.txt to run align.py. This will generate the directory example/ and run analysis up to and including amino acid and DNA alignments between pairs of domains in the same SUPERFAM family. If you want to run many independent comparisons to different selections of unrelated domains this prevents having to run alignments for each iteration, saving time. That is - just generate the alignments once so your independent comparisons can all use them.
 
+Note that, by default, align.py will attempt to use the python multiprocessing module to speed up running the alignments. If you do not want to do so, add the "multi=False" argument to the end of the list of arguments at the last line of align.py
+
 ## Compare ribosome occupancy profiles
 
 Use one or all of the other 20 commands in commands.txt to call runner.py and run comparisons between ribosome occupancy profiles for related domains. For the pooled data set this can be time consuming (~12 hours) due to the large number of random domains that must be selected and processed. 
