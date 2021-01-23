@@ -1,3 +1,10 @@
+# THIS IS THE INCORRECT VERSION
+
+Please see https://github.com/DanNissley/Compare-ribosome-occupancy for the full code and inputs/outputs used to generate published data and figures. 
+
+
+###############################################
+
 # Compare-ribosome-occupancy-profiles
 Code, inputs, and outputs from comparison of ribosome occupancy profiles between yeast domains. This code tests the hypothesis that translation rate profiles are conserved between protein domains that are structurally and evolutionarily related to one another. 
 
